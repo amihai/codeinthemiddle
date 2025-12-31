@@ -29,6 +29,8 @@ This approach has multiple benefits:
 
 The power of this method lies in using **AI only to create and edit the DSL code, and then relying on deterministic, non-AI methods to render the actual content**.
 
+This method came to my mind when I tried to generate some technical videos for a presentation. I used it and it really worked. I managed to generate short 15–20 second videos about Kubernetes and DevOps using ChatGPT and the prompt below.
+
 ## How It Works
 
 ### In ChatGPT 
