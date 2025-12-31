@@ -48,7 +48,11 @@ Example of Result: [https://youtu.be/NGY_J58c7nk?si=F_4n3IyNqfcsJ04O](https://yo
 
 ## As an AGENT
 
-WORK IN PROGRESS
+WORK IN PROGRESS: Develop an agent that abstracts the prompt-engineering layer and provides a more reliable DSL for generating videos and images. Follow the progress on [Github andreimihai](https://github.com/amihai/codeinthemiddle)
+
+## Limitations
+
+This method works only if we have a DSL (Domain-Specific Language) for a task. For example, we already have Python libraries for generating images and videos. However, we need to develop many more DSLs so that we can generate more diverse and complex content.
 
 
 # Author
