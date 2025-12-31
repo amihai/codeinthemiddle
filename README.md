@@ -37,3 +37,7 @@ Run the code and provide the resulting video.
 ```
 After we get the first iteration of the video/image we continue editing specific parts in a Chatbot conversation mode.
 
+# Author
+
+(Andrei Mihai)[https://www.linkedin.com/in/andrei1985/]
+
