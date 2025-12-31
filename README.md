@@ -3,11 +3,11 @@
 
 What if, instead of generating content such as videos or images directly with AI, we first generate Python code that produces that content?
 
-So instead of editing the video directly, we use AI to edit the Python code that generates the video.
+So instead of editing the video directly, we use AI to edit the Python code that will be rendered as video.
 
 ![Code In The Middle](CodeInTheMiddle.png)
 
-The Code is the determinitistc contract between the AI Assitant and Final Artifact rendering (video/image/etc). The Code can be python code or any executable Domain Specific Language (DSL).
+The Code is the determinitistc contract between the AI Assitant and Final Artifact rendering (video/image/etc). The Code can be Python code or any executable Domain-Specific Language (DSL).
 
 ## Benefits
 
@@ -25,9 +25,11 @@ This approach has multiple benefits:
 - **Explainability and debugging**  
   By using intermediary Python code, we can clearly see how the video is generated and manually adjust specific aspects such as text, colors, or frames.
 
-These Code-In-The-Middle techniques can be applied on top of any DSL (Domain-Specific Language). The power of this method lies in using AI only to create and edit the DSL code, and then relying on deterministic, non-AI methods to generate the actual content.
+These Code-In-The-Middle techniques can be applied on top of any DSL (Domain-Specific Language). The power of this method lies in using **AI only to create and edit the DSL code, and then relying on deterministic, non-AI methods to generate(render) the actual content**.
 
 ## How It Works
+
+### In ChatGPT 
 
 First, start with a prompt like:
 
@@ -39,6 +41,12 @@ Run the code and provide the resulting video.
 ```
 
 After we get the first iteration of the video/image we continue editing specific parts in a Chatbot conversation mode (Ai Assistant).
+
+Example of Result: [https://youtu.be/NGY_J58c7nk?si=F_4n3IyNqfcsJ04O](https://youtu.be/NGY_J58c7nk?si=F_4n3IyNqfcsJ04O) 
+
+## As an AGENT
+
+
 
 # Author
 
