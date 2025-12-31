@@ -5,7 +5,7 @@ What if, instead of generating content such as videos or images directly with AI
 
 So instead of editing the video directly, we use AI to edit the Python code that generates the video.
 
-https://github.com/amihai/codeinthemiddle/blob/main/CodeInTheMiddle.mp4
+(Code In The Middle)[https://youtu.be/NGY_J58c7nk?si=rogKp1_uWriFM_sr]
 
 ## Benefits
 
