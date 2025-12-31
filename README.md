@@ -33,28 +33,50 @@ This method came to my mind when I tried to generate some technical videos for a
 
 ## How It Works
 
+You can use this prompt engineering techniques (Code-In-The-Middle) in ChatGPT directly or as a standalone agent (application).
+
 ### In ChatGPT 
 
 First, start with a prompt like:
 
 ```text
 I want to create a short video (15 seconds) about Kubernetes pod autoscaling.
-First, create Python code that generates the video.
-Use any Python libraries you prefer to generate diagrams and merge them into a short video frame by frame.
+
+First, create Python code that generates the video. Use any Python libraries you prefer to generate diagrams and merge them into a short video frame by frame.
+
 Run the code and provide the resulting video.
 ```
 
 After we get the first iteration of the video/image we continue editing specific parts in a Chatbot conversation mode (Ai Assistant).
 
-Example of Result: [https://youtu.be/NGY_J58c7nk?si=F_4n3IyNqfcsJ04O](https://youtu.be/NGY_J58c7nk?si=F_4n3IyNqfcsJ04O) 
+Example of Results: 
+*  [https://youtu.be/NGY_J58c7nk](https://youtu.be/NGY_J58c7nk) 
+*  [https://youtu.be/ZjljxOrjAFg](https://youtu.be/ZjljxOrjAFg)
 
-## As an AGENT
+#### Limitations
 
-WORK IN PROGRESS: Develop an agent that abstracts the prompt-engineering layer and provides a more reliable DSL for generating videos and images. Follow the progress on [Github andreimihai](https://github.com/amihai/codeinthemiddle)
+This is working great in ChatGPT but it has some limitations:
 
-## Limitations
+* You can generate only small videos (upt to 30 seconds)
+* You can generate only what is able to run in the ChatGPT sandbox (what DSL is ChatGPT able to use in sandbox - lke python matplotlib and moviepy).
+* Sometime you need to adapt the prompt enginerring to fix some rendering bugs (for example you have to suggest to ChatGPT what libraries to use for video rendering).
+
+To overcome this limitations we have to build a small Agent or an Application.
 
 This method works only if we have a DSL (Domain-Specific Language) for a task. For example, we already have Python libraries for generating images and videos. However, we need to develop many more DSLs so that we can generate more diverse and complex content.
+
+## As an AGENT (standalone Application)
+
+The agent will use this Code-In-The-Middle technique to generate videos and will overcome the limitations of ChatGPT app by:
+
+*  Providing a reach DSL to be able to generate more diverse and complex videos
+*  Stdandardize (non-AI) the rendering part.
+*  Allow execution of long running tasks so that we can generate long videos.
+*  Abstract the prompt enginering and system instruction from the user.
+
+**WORK IN PROGRESS**: The development of the agent (standalone application) is work in progress and can be tracked here: [Github andreimihai](https://github.com/amihai/codeinthemiddle)
+
+# Conclusions
 
 
 # Author
