@@ -35,9 +35,10 @@ First, create Python code that generates the video.
 Use any Python libraries you prefer to generate diagrams and merge them into a short video frame by frame.
 Run the code and provide the resulting video.
 ```
-After we get the first iteration of the video/image we continue editing specific parts in a Chatbot conversation mode.
+
+After we get the first iteration of the video/image we continue editing specific parts in a Chatbot conversation mode (Ai Assistant).
 
 # Author
 
-(Andrei Mihai)[https://www.linkedin.com/in/andrei1985/]
+[Andrei Mihai](https://www.linkedin.com/in/andrei1985/)
 
