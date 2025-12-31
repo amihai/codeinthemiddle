@@ -5,7 +5,9 @@ What if, instead of generating content such as videos or images directly with AI
 
 So instead of editing the video directly, we use AI to edit the Python code that generates the video.
 
-[Code In The Middle](https://youtu.be/NGY_J58c7nk?si=rogKp1_uWriFM_sr)
+![Code In The Middle](CodeInTheMiddle.png)
+
+The Code is the determinitistc contract between the AI Assitant and Final Artifact rendering (video/image/etc). The Code can be python code or any executable Domain Specific Language (DSL).
 
 ## Benefits
 
