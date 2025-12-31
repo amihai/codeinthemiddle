@@ -1,13 +1,15 @@
 # Code-In-The-Middle 
 **Code-In-The-Middle is a Prompt Engineering Technique to Create Editable, Coherent Content**
 
-What if, instead of generating content such as videos or images directly with AI, we first generate Python code that produces that content?
+Instead of generating content such as videos or images directly with AI, we first generate Python code that produces (render) that content.
 
 So instead of editing the video directly, we use AI to edit the Python code that will be rendered as video.
 
+The Code is the determinitistc contract between the AI Assitant and Final Artifact rendering (video/image/etc). The Code can be Python code or any executable Domain-Specific Language (DSL).
+
 ![Code In The Middle](CodeInTheMiddle.png)
 
-The Code is the determinitistc contract between the AI Assitant and Final Artifact rendering (video/image/etc). The Code can be Python code or any executable Domain-Specific Language (DSL).
+
 
 ## Benefits
 
@@ -25,7 +27,7 @@ This approach has multiple benefits:
 - **Explainability and debugging**  
   By using intermediary Python code, we can clearly see how the video is generated and manually adjust specific aspects such as text, colors, or frames.
 
-These Code-In-The-Middle techniques can be applied on top of any DSL (Domain-Specific Language). The power of this method lies in using **AI only to create and edit the DSL code, and then relying on deterministic, non-AI methods to generate(render) the actual content**.
+The power of this method lies in using **AI only to create and edit the DSL code, and then relying on deterministic, non-AI methods to render the actual content**.
 
 ## How It Works
 
@@ -46,6 +48,7 @@ Example of Result: [https://youtu.be/NGY_J58c7nk?si=F_4n3IyNqfcsJ04O](https://yo
 
 ## As an AGENT
 
+WORK IN PROGRESS
 
 
 # Author
