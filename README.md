@@ -1,5 +1,5 @@
 # Code-In-The-Middle 
-**Code-In-The-Middle Prompt Engineering Technique to Create Editable, Coherent Content
+**Code-In-The-Middle Prompt Engineering Technique to Create Editable, Coherent Content**
 
 What if, instead of generating content such as videos or images directly with AI, we first generate Python code that produces that content?
 
