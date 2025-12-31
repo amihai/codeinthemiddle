@@ -25,8 +25,11 @@ This approach has multiple benefits:
   Generating code is much cheaper than generating videos directly.
 
 - **Explainability and debugging**  
-  By using intermediary Python code, we can clearly see how the video is generated and manually adjust specific aspects such as text, colors, or frames.
-
+  By using intermediary Python code (or DSL), we can clearly see how the video is generated and manually adjust specific aspects such as text, colors, or frames.
+  
+- **Shareabale and reusable**  
+  The Python code (or DSL) contract between AI and actual content can be shared and versioned in Git.
+  
 The power of this method lies in using **AI only to create and edit the DSL code, and then relying on deterministic, non-AI methods to render the actual content**.
 
 This method came to my mind when I tried to generate some technical videos for a presentation. I used it and it really worked. I managed to generate short 15–20 second videos about Kubernetes and DevOps using ChatGPT and the prompt below.
@@ -77,6 +80,12 @@ The agent will use this Code-In-The-Middle technique to generate videos and will
 **WORK IN PROGRESS**: The development of the agent (standalone application) is work in progress and can be tracked here: [Github andreimihai](https://github.com/amihai/codeinthemiddle)
 
 # Conclusions
+
+*  **Code-In-The-Middle** is not just a prompt engineering technique, because it also includes the DSL and the deterministic rendering of that DSL into a final artifact such as a video or an image.
+
+*  The main idea behind **Code-In-The-Middle** is that **AI only creates and edits the DSL code, and the rendering of the actual content is then done through deterministic, non-AI methods**
+
+*  Using the DSL (Python code) as a contract between the AI and the actual content makes edits **coherent**, **controllable**, **explainable**, **shareable**, and **cost-efficient**. 
 
 
 # Author
