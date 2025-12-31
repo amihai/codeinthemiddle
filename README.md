@@ -5,6 +5,8 @@ What if, instead of generating content such as videos or images directly with AI
 
 So instead of editing the video directly, we use AI to edit the Python code that generates the video.
 
+![CodeInTheMiddle](CodeInTheMiddle.mp4)
+
 ## Benefits
 
 This approach has multiple benefits:
