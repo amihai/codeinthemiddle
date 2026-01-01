@@ -62,7 +62,7 @@ Move all the boxes a little bit to the left. And make the arrow from the user to
 Verify the generated output against the specification before returning the final result.
 ```
 
-**Verify the generated output against the specification before returning the final result** at the end is very important because it instruct the model to visualy check the result before returning it to us. I find this extra line very powerfull in many ChatGPT conversations. 
+**Verify the generated output against the specification before returning the final result** is very important because it instructs the model to visually check the result before returning it. I find this additional line very powerful in many ChatGPT conversations.
 
 
 Example of Results: 
