@@ -52,9 +52,18 @@ I want to create a short video (15 seconds) about Kubernetes pod autoscaling.
 First, create Python code that generates the video. Use any Python libraries you prefer to generate diagrams and merge them into a short video frame by frame.
 
 Run the code and provide the resulting video.
+Verify the generated output against the specification before returning the final result.
 ```
 
-After obtaining the first iteration of the video or image, we continue editing specific parts through a chatbot conversation (AI assistant).
+After obtaining the first iteration of the video or image, we continue editing specific parts through a chatbot conversation (AI assistant):
+
+```text
+Move all the boxes a little bit to the left. And make the arrow from the user to be connected with the roto agent.
+Verify the generated output against the specification before returning the final result.
+```
+
+**Verify the generated output against the specification before returning the final result** at the end is very important because it instruct the model to visualy check the result before returning it to us. I find this extra line very powerfull in many ChatGPT conversations. 
+
 
 Example of Results: 
 *  [https://youtu.be/NGY_J58c7nk](https://youtu.be/NGY_J58c7nk) 
