@@ -5,7 +5,7 @@ Instead of generating content such as videos or images directly with AI, we firs
 
 Instead of editing the video directly, we use AI to edit the Python code that is rendered into a video.
 
-The Code is the determinitistc contract between the AI Assistant and Final Artifact rendering (video/image/etc). The Code can be Python code or any executable Domain-Specific Language (DSL).
+The code is the deterministic contract between the AI assistant and the final artifact rendering process (video, image, etc.).
 
 **Code-In-The-Middle** = **Prompt Engineering** + **Tools**
 
