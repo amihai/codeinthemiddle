@@ -80,9 +80,7 @@ This works well in ChatGPT, but it has some limitations:
 * You can generate only what can run in the ChatGPT sandbox (what DSL is ChatGPT able to use in sandbox - like python matplotlib and moviepy).
 * Sometimes you need to adapt the prompt engineering to fix rendering issues (for example you might need to suggest to ChatGPT what libraries to use for video rendering).
 
-To overcome this limitations we have to build a small Agent or an Application.
-
-This method works only if we have a DSL (Domain-Specific Language) for a task. For example, we already have Python libraries for generating images and videos. However, we need to develop many more DSLs so that we can generate more diverse and complex content.
+To overcome this limitations we have to build an Agent.
 
 ## Code-In-The-Middle Agent
 
