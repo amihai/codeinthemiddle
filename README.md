@@ -1,9 +1,9 @@
 # Code-In-The-Middle 
-**Code-In-The-Middle is a Technique to Create Editable, Coherent Content**
+**Code-In-The-Middle is a technique for creating editable, coherent content.**
 
-Instead of generating content such as videos or images directly with AI, we first generate Python code that produces (render) that content.
+Instead of generating content such as videos or images directly with AI, we first generate Python code that produces (renders) that content.
 
-So instead of editing the video directly, we use AI to edit the Python code that will be rendered as video.
+Instead of editing the video directly, we use AI to edit the Python code that is rendered into a video.
 
 The Code is the determinitistc contract between the AI Assistant and Final Artifact rendering (video/image/etc). The Code can be Python code or any executable Domain-Specific Language (DSL).
 
