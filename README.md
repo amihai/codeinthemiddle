@@ -5,7 +5,7 @@ Instead of generating content such as videos or images directly with AI, we firs
 
 Instead of editing the video directly, we use AI to edit the Python code that is rendered into a video.
 
-The code is the deterministic contract between the AI assistant and the final artifact rendering process (video, image, etc.).
+The code is the deterministic contract between the AI assistant and the final artifact rendering process (video, image, etc.). The code can be Python or any executable domain-specific language (DSL).
 
 **Code-In-The-Middle** = **Prompt Engineering** + **Tools**
 
@@ -20,10 +20,10 @@ The code is the deterministic contract between the AI assistant and the final ar
 This approach has multiple benefits:
 
 - **Coherence and determinism**  
-  We can iterate many times on the content editing while preserving consistency across edits.
+  We can iterate many times on the content while preserving consistency across edits.
 
 - **Control**  
-  We can fine-tune or modify any aspect of the video without impacting the rest, because we are modifying the intermediary code.
+  We can fine-tune or modify any aspect of the video without impacting the rest, because we modify the intermediary code.
 
 - **Cost reduction**  
   Generating code is much cheaper than generating videos directly.
@@ -32,7 +32,7 @@ This approach has multiple benefits:
   By using intermediary Python code (or DSL), we can clearly see how the video is generated and manually adjust specific aspects such as text, colors, or frames.
   
 - **Shareabale and reusable**  
-  The Python code (or DSL) contract between AI and actual content can be shared and versioned in Git.
+  The Python code (or DSL) contract between the AI and the actual content can be shared and versioned in Git.
   
 The power of this method lies in using **AI only to create and edit the DSL code, and then relying on deterministic, non-AI methods to render the actual content**.
 
@@ -40,7 +40,7 @@ This method came to my mind when I tried to generate some technical videos for a
 
 ## How It Works
 
-You can use this prompt engineering techniques (Code-In-The-Middle) in ChatGPT directly or as a standalone agent (application).
+You can use this prompt engineering technique (Code-In-The-Middle) directly in ChatGPT or as a standalone agent (application).
 
 ### In ChatGPT 
 
@@ -54,7 +54,7 @@ First, create Python code that generates the video. Use any Python libraries you
 Run the code and provide the resulting video.
 ```
 
-After we get the first iteration of the video/image we continue editing specific parts in a Chatbot conversation mode (Ai Assistant).
+After obtaining the first iteration of the video or image, we continue editing specific parts through a chatbot conversation (AI assistant).
 
 Example of Results: 
 *  [https://youtu.be/NGY_J58c7nk](https://youtu.be/NGY_J58c7nk) 
@@ -65,11 +65,11 @@ Example of Results:
 
 #### Limitations
 
-This is working great in ChatGPT but it has some limitations:
+This works well in ChatGPT, but it has some limitations:
 
 * You can generate only small videos (upt to 30 seconds)
-* You can generate only what is able to run in the ChatGPT sandbox (what DSL is ChatGPT able to use in sandbox - like python matplotlib and moviepy).
-* Sometime you need to adapt the prompt engineering to fix some rendering bugs (for example you have to suggest to ChatGPT what libraries to use for video rendering).
+* You can generate only what can run in the ChatGPT sandbox (what DSL is ChatGPT able to use in sandbox - like python matplotlib and moviepy).
+* Sometimes you need to adapt the prompt engineering to fix rendering issues (for example you might need to suggest to ChatGPT what libraries to use for video rendering).
 
 To overcome this limitations we have to build a small Agent or an Application.
 
@@ -79,16 +79,16 @@ This method works only if we have a DSL (Domain-Specific Language) for a task. F
 
 The agent will use this Code-In-The-Middle technique to generate videos and will overcome the limitations of ChatGPT app by:
 
-*  Providing a reach DSL to be able to generate more diverse and complex videos
-*  Standardize (non-AI) rendering part by implementing some MCP Servers for video/content rendering from DSL Code.
-*  Allow execution of long running tasks so that we can generate long videos.
+*  Providing a rich DSL to generate more diverse and complex videos
+*  Standardize the non-AI rendering part by implementing MCP servers (for each content type: video, image, document, etc).
+*  Allow execution of long-running tasks so that we can generate long videos.
 *  Abstract the prompt enginering and system instructions from the user.
 
 **WORK IN PROGRESS**: The development of the agent is work in progress and can be tracked here: [Github andreimihai](https://github.com/amihai/codeinthemiddle)
 
 # Conclusions
 
-*  **Code-In-The-Middle** is not just a prompt engineering technique, because it also includes the DSL and the deterministic rendering of that DSL into a final artifact such as a video or an image (MCP Tools).
+*  **Code-In-The-Middle** is not just a prompt engineering technique; it also includes the DSL and the deterministic rendering of that DSL into a final artifact such as a video or an image (via MCP tools).
 
 *  The main idea behind **Code-In-The-Middle** is that **AI only creates and edits the DSL code, and the rendering of the actual content is then done through deterministic, non-AI methods**
 
