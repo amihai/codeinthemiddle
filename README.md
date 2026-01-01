@@ -7,6 +7,10 @@ So instead of editing the video directly, we use AI to edit the Python code that
 
 The Code is the determinitistc contract between the AI Assistant and Final Artifact rendering (video/image/etc). The Code can be Python code or any executable Domain-Specific Language (DSL).
 
+**Code-In-The-Middle** = **Prompt Engineering** + **Tools**
+
+**Code-In-The-Middle** is not just prompt engineering; it also requires rendering tools. 
+
 ![Code In The Middle](CodeInTheMiddle.png)
 
 
