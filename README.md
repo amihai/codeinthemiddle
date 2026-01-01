@@ -9,7 +9,7 @@ The Code is the determinitistc contract between the AI Assistant and Final Artif
 
 **Code-In-The-Middle** = **Prompt Engineering** + **Tools**
 
-**Code-In-The-Middle** is not just prompt engineering to generate the DSL code; it also requires rendering tools. 
+**Code-In-The-Middle** is not just prompt engineering to generate the DSL code; it also requires rendering tools. Some of these tools are already available in ChatGPT, but with certain limitations. These limitations can be overcome by implementing a **Code-In-the-Middle Agent**, as described below.
 
 ![Code In The Middle](CodeInTheMiddle.png)
 
@@ -68,31 +68,33 @@ Example of Results:
 This is working great in ChatGPT but it has some limitations:
 
 * You can generate only small videos (upt to 30 seconds)
-* You can generate only what is able to run in the ChatGPT sandbox (what DSL is ChatGPT able to use in sandbox - lke python matplotlib and moviepy).
+* You can generate only what is able to run in the ChatGPT sandbox (what DSL is ChatGPT able to use in sandbox - like python matplotlib and moviepy).
 * Sometime you need to adapt the prompt enginerring to fix some rendering bugs (for example you have to suggest to ChatGPT what libraries to use for video rendering).
 
 To overcome this limitations we have to build a small Agent or an Application.
 
 This method works only if we have a DSL (Domain-Specific Language) for a task. For example, we already have Python libraries for generating images and videos. However, we need to develop many more DSLs so that we can generate more diverse and complex content.
 
-## As an AGENT (standalone Application)
+## Code-In-The-Middle Agent
 
 The agent will use this Code-In-The-Middle technique to generate videos and will overcome the limitations of ChatGPT app by:
 
 *  Providing a reach DSL to be able to generate more diverse and complex videos
-*  Stdandardize (non-AI) the rendering part.
+*  Standardize (non-AI) rendering part by implementing some MCP Servers for video rendering from DSL Code.
 *  Allow execution of long running tasks so that we can generate long videos.
 *  Abstract the prompt enginering and system instruction from the user.
 
-**WORK IN PROGRESS**: The development of the agent (standalone application) is work in progress and can be tracked here: [Github andreimihai](https://github.com/amihai/codeinthemiddle)
+**WORK IN PROGRESS**: The development of the agent is work in progress and can be tracked here: [Github andreimihai](https://github.com/amihai/codeinthemiddle)
 
 # Conclusions
 
-*  **Code-In-The-Middle** is not just a prompt engineering technique, because it also includes the DSL and the deterministic rendering of that DSL into a final artifact such as a video or an image.
+*  **Code-In-The-Middle** is not just a prompt engineering technique, because it also includes the DSL and the deterministic rendering of that DSL into a final artifact such as a video or an image (MCP Tools).
 
 *  The main idea behind **Code-In-The-Middle** is that **AI only creates and edits the DSL code, and the rendering of the actual content is then done through deterministic, non-AI methods**
 
-*  Using the DSL (Python code) as a contract between the AI and the actual content makes edits **coherent**, **controllable**, **explainable**, **shareable**, and **cost-efficient**. 
+*  Using the DSL (Python code) as a contract between the AI and the actual content makes edits **coherent**, **controllable**, **explainable**, **shareable**, and **cost-efficient**.
+  
+* Implementing a **Code-In-The-Middle Agent** will offer the right tools and prompt engineering for content generation of multiple binary formats like video,images,document, presentation.  
 
 
 # Author
