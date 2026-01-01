@@ -69,7 +69,7 @@ This is working great in ChatGPT but it has some limitations:
 
 * You can generate only small videos (upt to 30 seconds)
 * You can generate only what is able to run in the ChatGPT sandbox (what DSL is ChatGPT able to use in sandbox - like python matplotlib and moviepy).
-* Sometime you need to adapt the prompt enginerring to fix some rendering bugs (for example you have to suggest to ChatGPT what libraries to use for video rendering).
+* Sometime you need to adapt the prompt engineering to fix some rendering bugs (for example you have to suggest to ChatGPT what libraries to use for video rendering).
 
 To overcome this limitations we have to build a small Agent or an Application.
 
@@ -80,9 +80,9 @@ This method works only if we have a DSL (Domain-Specific Language) for a task. F
 The agent will use this Code-In-The-Middle technique to generate videos and will overcome the limitations of ChatGPT app by:
 
 *  Providing a reach DSL to be able to generate more diverse and complex videos
-*  Standardize (non-AI) rendering part by implementing some MCP Servers for video rendering from DSL Code.
+*  Standardize (non-AI) rendering part by implementing some MCP Servers for video/content rendering from DSL Code.
 *  Allow execution of long running tasks so that we can generate long videos.
-*  Abstract the prompt enginering and system instruction from the user.
+*  Abstract the prompt enginering and system instructions from the user.
 
 **WORK IN PROGRESS**: The development of the agent is work in progress and can be tracked here: [Github andreimihai](https://github.com/amihai/codeinthemiddle)
 
