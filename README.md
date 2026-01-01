@@ -95,6 +95,8 @@ The agent will use this Code-In-The-Middle technique to generate videos and will
 
 **WORK IN PROGRESS**: The development of the agent is work in progress and can be tracked here: [Github andreimihai](https://github.com/amihai/codeinthemiddle)
 
+![Code In The Middle Agent](code_in_the_middle_mcp.png)
+
 # Conclusions
 
 *  **Code-In-The-Middle** is not just a prompt engineering technique; it also includes the DSL and the deterministic rendering of that DSL into a final artifact such as a video or an image (via MCP tools).
