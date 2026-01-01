@@ -31,7 +31,7 @@ This approach has multiple benefits:
 - **Explainability and debugging**  
   By using intermediary Python code (or DSL), we can clearly see how the video is generated and manually adjust specific aspects such as text, colors, or frames.
   
-- **Shareabale and reusable**  
+- **Shareable and reusable**  
   The Python code (or DSL) contract between the AI and the actual content can be shared and versioned in Git.
   
 The power of this method lies in using **AI only to create and edit the DSL code, and then relying on deterministic, non-AI methods to render the actual content**.
